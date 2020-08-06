@@ -1,0 +1,76 @@
+.logo {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+    height: 60px;
+}
+
+.tittle {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.content,
+.text {
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+    font-weight: 700;
+}
+
+.fondo {
+    /*border: 1px solid;*/
+    width: 50%;
+}
+
+.form {
+    width: 38%;
+    border-radius: 15px;
+    padding: 3%;
+    box-shadow: darkorchid;
+    box-shadow: 0px 0px 16px 0px #dbdadb;
+}
+
+input {
+    border: 1px solid #80808022 !important;
+}
+
+select {
+    border: 1px solid #80808022 !important;
+}
+
+.imgagges {
+    width: 90%;
+    height: auto;
+}
+
+.conten2 {
+    /*border: 1px solid blue;*/
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    height: auto;
+}
+
+label {
+    text-align: left;
+    float: left;
+    color: black;
+    font-weight: bolder;
+}
+
+.btn {
+    background: #e03b64;
+    border-radius: 30px;
+    width: 36%;
+    color: white;
+    font-size: 120%;
+}
+
+.header {
+    border: 1px solid blue;
+    height: 50px;
+    margin-top: 50px;
+}
