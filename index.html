@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -35,31 +37,31 @@
                     <img class="imgagges" src="../img/sigma-image.png" alt="">
                 </div>
 
-                <form class="form">
+                <form class="form" id="form">
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <label for="inputEmail4">Departamento*</label>
-                            <select type="text" class="form-control" id="departamento" aria-placeholder="Antioquia"> </select>
+                            <label for="">Departamento*</label>
+                            <select type="text" class="form-control" id="departamento" name="departamento"> </select>
                         </div>
 
                         <div class="form-group col-md-12">
-                            <label for="inputPassword4">Ciudad*</label>
-                            <select type="text" class="form-control" id="ciudad"></select>
+                            <label for="">Ciudad*</label>
+                            <select type="text" class="form-control" id="ciudad" name="ciudad"></select>
                         </div>
 
                         <div class="form-group col-md-12">
                             <label for="inputPassword4">Nombre*</label>
-                            <input maxlength="50" type="text" class="form-control" id="nombre">
+                            <input maxlength="50" type="text" class="form-control" id="nombre" name="nombre">
                         </div>
 
                         <div class="form-group col-md-12">
-                            <label for="inputPassword4">Corrreo*</label>
-                            <input maxlength="30" type="email" class="form-control" id="email">
+                            <label for="">Corrreo*</label>
+                            <input maxlength="30" type="email" class="form-control" id="email" name="email">
                         </div>
 
                     </div>
 
-                    <button type="button" class="btn">ENVIAR</button>
+                    <button type="button" class="btn" id="enviar">ENVIAR</button>
 
                 </form>
             </div>
@@ -75,8 +77,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 </body>
 
-<header class="header">
+<footer class="footer">
 
-</header>
+</footer>
 
 </html>

@@ -69,8 +69,8 @@ label {
     font-size: 120%;
 }
 
-.header {
-    border: 1px solid blue;
-    height: 50px;
+.footer {
+    border: 1px solid white;
+    height: 25px;
     margin-top: 50px;
 }
