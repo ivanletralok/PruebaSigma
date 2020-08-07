@@ -14,7 +14,7 @@
 
 .content,
 .text {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     color: gray;
     font-weight: 700;
@@ -41,7 +41,7 @@ select {
 }
 
 .imgagges {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 

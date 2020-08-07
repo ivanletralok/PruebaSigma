@@ -60,6 +60,8 @@ $('#enviar').click((event) => {
                         icon: "success",
                     });
                     limpiarinput();
+                } else {
+                    swal("intente cambiar el correo electronico quizas exista en nuestra base de datos, si el problema perciste comuniquese con el administrador")
                 }
             });
     } else {
