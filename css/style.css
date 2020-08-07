@@ -26,7 +26,6 @@
 }
 
 .form {
-    width: 38%;
     border-radius: 15px;
     padding: 3%;
     box-shadow: darkorchid;
@@ -56,7 +55,7 @@ select {
 
 label {
     text-align: left;
-    float: left;
+    width: 100%;
     color: black;
     font-weight: bolder;
 }
@@ -69,8 +68,20 @@ label {
     font-size: 120%;
 }
 
+.btn span {
+    font-size: initial;
+}
+
 .footer {
     border: 1px solid white;
-    height: 25px;
-    margin-top: 50px;
+    margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+    .fondo {
+        display: none;
+    }
+    .form label {
+        text-align: center;
+    }
 }

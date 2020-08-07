@@ -6,7 +6,7 @@ $(document).ready(async function() {
 
 
 async function departamento() {
-    const url = 'https://sigma-studios.s3-us-west-2.amazonaws.com/test/colombia.json'
+    const url = '../server/api.php'
     const response = await fetch(url, { mode: 'cors' })
     const data = await response.json()
     const depart = [];
@@ -39,20 +39,29 @@ $('#enviar').click((event) => {
     let dep = $("#departamento option:selected").text();
     let ciud = $("#ciudad option:selected").text();
 
-    var config = { departamento: dep, ciudad: ciud };
+    var data = { departamento: dep, ciudad: ciud };
     $('input').each(function() {
-        config[this.name] = this.value;
+        data[this.name] = this.value;
 
     });
 
     if (validarInput() == true) {
-        console.log("true")
-        swal({
-            title: "Bien Hecho!",
-            text: "Datos Enviados Con Exito!",
-            icon: "success",
-        });
-        limpiarinput();
+        fetch('./server/save.php', {
+                method: 'POST',
+                body: JSON.stringify(data)
+            })
+            .catch(error => console.error('Error:', error))
+            .then(function(response) {
+                if (response.status === 200) {
+                    console.log(response)
+                    swal({
+                        title: "Bien Hecho!",
+                        text: "Tu información ha sido recibida satisfactoriamente!",
+                        icon: "success",
+                    });
+                    limpiarinput();
+                }
+            });
     } else {
         console.log("false")
     }
@@ -67,24 +76,23 @@ function validarInput() {
         if (ciud != null) {
             if (nom != '') {
                 if ($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
-                    alert('El correo electrónico introducido no es correcto.');
+                    swal('El correo electrónico introducido no es correcto.');
                     return false;
                 }
                 return true
             } else {
-                alert("campo nombre es obligatorio")
+                swal("campo nombre es obligatorio")
             }
 
         } else {
-            alert("campo ciudad es obligatorio")
+            swal("campo ciudad es obligatorio")
         }
     } else {
-        alert("campo de departamento es obligatorio")
+        swal("campo de departamento es obligatorio")
     }
 }
 
 function limpiarinput() {
-    $('#departamento').empty();
     $('#ciudad').empty();
     $('#nombre').val('');
     $("#email").val('');

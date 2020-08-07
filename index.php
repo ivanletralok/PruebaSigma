@@ -6,12 +6,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Pieza Sigma</title>
 </head>
 
@@ -20,7 +20,7 @@
     <div class="container">
 
         <header>
-            <img class="logo" src="../img/sigma-logo.png" alt="logo">
+            <img class="logo" src="./img/sigma-logo.png" alt="logo">
         </header>
 
         <h1 class="tittle">Prueba De Desarrollo Sigma</h1>
@@ -32,36 +32,38 @@
                 Lorem, ipsum dolor  sit amet consectetur adipisicing elit.
             </span>
 
-            <div class="conten2">
-                <div class="fondo">
-                    <img class="imgagges" src="../img/sigma-image.png" alt="">
+            <div class="conten2 row">
+                <div class="fondo col-lg-5">
+                    <img class="imgagges" src="./img/sigma-image.png" alt="">
                 </div>
 
-                <form class="form" id="form">
+                <form class="form col-11 col-sm-10 col-md-10 col-lg-5" id="form">
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <label for="">Departamento*</label>
+                            <label for="departamento">Departamento*</label>
                             <select type="text" class="form-control" id="departamento" name="departamento"> </select>
                         </div>
 
                         <div class="form-group col-md-12">
-                            <label for="">Ciudad*</label>
+                            <label for="ciudad">Ciudad*</label>
                             <select type="text" class="form-control" id="ciudad" name="ciudad"></select>
                         </div>
 
                         <div class="form-group col-md-12">
-                            <label for="inputPassword4">Nombre*</label>
+                            <label for="nombre">Nombre*</label>
                             <input maxlength="50" type="text" class="form-control" id="nombre" name="nombre">
                         </div>
 
                         <div class="form-group col-md-12">
-                            <label for="">Corrreo*</label>
+                            <label for="email">Corrreo*</label>
                             <input maxlength="30" type="email" class="form-control" id="email" name="email">
                         </div>
 
                     </div>
 
-                    <button type="button" class="btn" id="enviar">ENVIAR</button>
+                    <button type="button" class="btn" id="enviar">
+                        <span>ENVIAR</span>
+                    </button>
 
                 </form>
             </div>
@@ -71,10 +73,8 @@
 
     </div>
 
-    <script src="../js/index.js"></script>
+    <script src="./js/index.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
 </body>
 
 <footer class="footer">
